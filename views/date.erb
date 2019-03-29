@@ -3,7 +3,7 @@
     <head>
     </head>
     <body>
-      <% today = DateTime.now %>
-        <p>The date is <%= today %>.</p>
+      <% today = Time.new %>
+        <p>The date is <%= today.strftime("%A, %B %d, %Y") %>.</p>
     </body>
 </html>
